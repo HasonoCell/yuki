@@ -1,0 +1,46 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // 文件结构
+    "rootDir": "./",
+    "outDir": "./dist",
+
+    // 运行环境
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node"],
+    // For nodejs:
+    "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // 输出
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // 类型检查
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "esModuleInterop": true // 兼容 CommonJS 导入
+  },
+  "exclude": ["dist", "node_modules", ".yuki_cache"]
+}
